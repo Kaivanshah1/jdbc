@@ -1,0 +1,21 @@
+<jdbc>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/postgres?currentSchema=public</url>
+    <user>postgres</user>
+    <password></password>
+</jdbc>
+
+<generator>
+<database>
+    <name>POSTGRES</name>
+    <includes>.*</includes>
+</database>
+<generate>
+    <records>true</records>
+    <daos>true</daos>
+</generate>
+<target>
+    <packageName>com.yourpackage.jooq</packageName>
+    <directory>src/main/kotlin</directory>
+</target>
+</generator>
